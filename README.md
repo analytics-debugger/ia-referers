@@ -11,48 +11,48 @@ This repository contains a comprehensive regex pattern for detecting AI and tech
 
 ## Pattern Breakdown
 
-| Regex Pattern | Category | Company/Service | Match Type | Example URLs |
-|---------------|----------|-----------------|------------|--------------|
-| `perplexity\.ai` | AI Search | Perplexity | Exact domain | perplexity.ai |
-| `you\.com` | Search Engine | You.com | Exact domain | you.com |
-| `searchgpt\.com` | AI Search | OpenAI | Exact domain | searchgpt.com |
-| `chatgpt\.com` | AI Assistant | OpenAI | Exact domain | chatgpt.com |
-| `chat\.openai\.com` | AI Assistant | OpenAI | Subdomain | chat.openai.com |
-| `claude\.ai` | AI Assistant | Anthropic | Exact domain | claude.ai |
-| `anthropic\.com` | AI Company | Anthropic | Exact domain | anthropic.com |
-| `gemini\.google\.com` | AI Assistant | Google | Subdomain | gemini.google.com |
-| `bard\.google\.com` | AI Assistant | Google | Subdomain | bard.google.com |
-| `bing\.com.*chat` | AI Search | Microsoft | Wildcard path | bing.com/chat, bing.com/search/chat |
-| `copilot\.microsoft\.com` | AI Assistant | Microsoft | Subdomain | copilot.microsoft.com |
-| `phind\.com` | AI Search | Phind | Exact domain | phind.com |
-| `kagi\.com` | Search Engine | Kagi | Exact domain | kagi.com |
-| `deepseek\.com` | AI Company | DeepSeek | Exact domain | deepseek.com |
-| `chat\.deepseek\.com` | AI Assistant | DeepSeek | Subdomain | chat.deepseek.com |
-| `mistral\.ai` | AI Company | Mistral AI | Exact domain | mistral.ai |
-| `chat\.mistral\.ai` | AI Assistant | Mistral AI | Subdomain | chat.mistral.ai |
-| `lechat\.mistral\.ai` | AI Assistant | Mistral AI | Subdomain | lechat.mistral.ai |
-| `cohere\.com` | AI Company | Cohere | Exact domain | cohere.com |
-| `meta\.ai` | AI Assistant | Meta | Exact domain | meta.ai |
-| `groq\.com` | AI Inference | Groq | Exact domain | groq.com |
-| `together\.ai` | AI Platform | Together AI | Exact domain | together.ai |
-| `fireworks\.ai` | AI Platform | Fireworks AI | Exact domain | fireworks.ai |
-| `openrouter\.ai` | AI Platform | OpenRouter | Exact domain | openrouter.ai |
-| `grok\.x\.com` | AI Assistant | X (Twitter) | Subdomain | grok.x.com |
-| `x\.com.*grok` | AI Assistant | X (Twitter) | Wildcard path | x.com/grok, x.com/i/grok |
-| `pi\.ai` | AI Assistant | Inflection AI | Exact domain | pi.ai |
-| `inflection\.ai` | AI Company | Inflection AI | Exact domain | inflection.ai |
-| `cerebras\.ai` | AI Hardware | Cerebras | Exact domain | cerebras.ai |
-| `openai\.com` | AI Company | OpenAI | Exact domain | openai.com |
-| `google\.com.*bard` | AI Assistant | Google | Wildcard path | google.com/bard, google.com/ai/bard |
-| `google\.com.*gemini` | AI Assistant | Google | Wildcard path | google.com/gemini, google.com/ai/gemini |
-| `microsoft\.com.*copilot` | AI Assistant | Microsoft | Wildcard path | microsoft.com/copilot, microsoft.com/ai/copilot |
+| Category | Company/Service | Effective Pattern | Example URLs |
+|----------|-----------------|-------------------|--------------|
+| AI Search | Perplexity | `.*perplexity\.ai.*` | https://perplexity.ai/search, https://sub.perplexity.ai |
+| Search Engine | You.com | `.*you\.com.*` | https://you.com/search, https://api.you.com |
+| AI Search | OpenAI | `.*searchgpt\.com.*` | https://searchgpt.com/chat, https://www.searchgpt.com |
+| AI Assistant | OpenAI | `.*chatgpt\.com.*` | https://chatgpt.com/c/123, https://chatgpt.com/auth |
+| AI Assistant | OpenAI | `.*chat\.openai\.com.*` | https://chat.openai.com/chat, https://chat.openai.com/auth |
+| AI Assistant | Anthropic | `.*claude\.ai.*` | https://claude.ai/chat, https://claude.ai/login |
+| AI Company | Anthropic | `.*anthropic\.com.*` | https://anthropic.com/claude, https://www.anthropic.com |
+| AI Assistant | Google | `.*gemini\.google\.com.*` | https://gemini.google.com/app, https://gemini.google.com/chat |
+| AI Assistant | Google | `.*bard\.google\.com.*` | https://bard.google.com/chat, https://bard.google.com/u/0 |
+| AI Search | Microsoft | `.*bing\.com.*chat.*` | https://bing.com/chat, https://bing.com/search/chat/new |
+| AI Assistant | Microsoft | `.*copilot\.microsoft\.com.*` | https://copilot.microsoft.com/chat, https://copilot.microsoft.com/auth |
+| AI Search | Phind | `.*phind\.com.*` | https://phind.com/search, https://www.phind.com |
+| Search Engine | Kagi | `.*kagi\.com.*` | https://kagi.com/search, https://kagi.com/login |
+| AI Company | DeepSeek | `.*deepseek\.com.*` | https://deepseek.com/chat, https://www.deepseek.com |
+| AI Assistant | DeepSeek | `.*chat\.deepseek\.com.*` | https://chat.deepseek.com/coder, https://chat.deepseek.com/auth |
+| AI Company | Mistral AI | `.*mistral\.ai.*` | https://mistral.ai/chat, https://www.mistral.ai |
+| AI Assistant | Mistral AI | `.*chat\.mistral\.ai.*` | https://chat.mistral.ai/chat, https://chat.mistral.ai/login |
+| AI Assistant | Mistral AI | `.*lechat\.mistral\.ai.*` | https://lechat.mistral.ai/chat, https://lechat.mistral.ai/auth |
+| AI Company | Cohere | `.*cohere\.com.*` | https://cohere.com/chat, https://dashboard.cohere.com |
+| AI Assistant | Meta | `.*meta\.ai.*` | https://meta.ai/chat, https://www.meta.ai |
+| AI Inference | Groq | `.*groq\.com.*` | https://groq.com/playground, https://console.groq.com |
+| AI Platform | Together AI | `.*together\.ai.*` | https://together.ai/playground, https://api.together.ai |
+| AI Platform | Fireworks AI | `.*fireworks\.ai.*` | https://fireworks.ai/models, https://app.fireworks.ai |
+| AI Platform | OpenRouter | `.*openrouter\.ai.*` | https://openrouter.ai/playground, https://openrouter.ai/keys |
+| AI Assistant | X (Twitter) | `.*grok\.x\.com.*` | https://grok.x.com/chat, https://grok.x.com/login |
+| AI Assistant | X (Twitter) | `.*x\.com.*grok.*` | https://x.com/grok, https://x.com/i/grok/chat |
+| AI Assistant | Inflection AI | `.*pi\.ai.*` | https://pi.ai/talk, https://www.pi.ai |
+| AI Company | Inflection AI | `.*inflection\.ai.*` | https://inflection.ai/pi, https://www.inflection.ai |
+| AI Hardware | Cerebras | `.*cerebras\.ai.*` | https://cerebras.ai/inference, https://www.cerebras.ai |
+| AI Company | OpenAI | `.*openai\.com.*` | https://openai.com/chatgpt, https://platform.openai.com |
+| AI Assistant | Google | `.*google\.com.*bard.*` | https://google.com/bard, https://google.com/ai/bard/chat |
+| AI Assistant | Google | `.*google\.com.*gemini.*` | https://google.com/gemini, https://google.com/ai/gemini/app |
+| AI Assistant | Microsoft | `.*microsoft\.com.*copilot.*` | https://microsoft.com/copilot, https://microsoft.com/ai/copilot/chat |
 
-## Pattern Features
-
-- **Case Insensitive**: The `i` flag makes the pattern case-insensitive
-- **Anchored**: `.*` at the beginning and end allows matching within larger URLs
-- **Escaped Dots**: Domain dots are properly escaped with `\.`
-- **Wildcard Paths**: Some patterns use `.*` to match various paths within domains
+## Key Notes:
+- The regex starts with `.*` which matches any characters before the domain
+- All patterns will match the specified domain/subdomain plus any path that follows
+- Patterns with `.*` in the middle (like `bing\.com.*chat`) match the domain followed by any characters, then the specified text
+- The `i` flag makes the entire regex case-insensitive
+- The "Effective Pattern" column shows how each individual pattern works within the full `.*(...).*/i` structure
 
 ## Logic
 ![image](https://github.com/user-attachments/assets/a0a497b5-7836-483c-9199-b0a5c2c8b824)
