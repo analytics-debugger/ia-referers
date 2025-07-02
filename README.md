@@ -55,7 +55,8 @@ This repository contains a comprehensive regex pattern for detecting AI and tech
 - **Wildcard Paths**: Some patterns use `.*` to match various paths within domains
 
 ## Logic
-![image](https://github.com/user-attachments/assets/8980c0f7-1183-403d-9162-4019b2cf3318)
+![image](https://github.com/user-attachments/assets/a0a497b5-7836-483c-9199-b0a5c2c8b824)
+
 
 ## Usage Examples
 
